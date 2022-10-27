@@ -96,7 +96,7 @@ public class RecursiveMethods {
 		if (radius<radiusMinimumDrawingThreshold) {
 			return;
 		}
-		StdDraw.setPenColor((int)(255*Math.random()), (int)(255*Math.random()), (int)(255*Math.random()));
+		StdDraw.setPenColor((int)(150*Math.random())+100, 0, (int)(150*Math.random())+100);
 		StdDraw.circle(xCenter, yCenter, radius);
 		circlesUponCircles(xCenter-radius, yCenter, radius/2.0, radiusMinimumDrawingThreshold);
 		circlesUponCircles(xCenter, yCenter+radius, radius/2.0, radiusMinimumDrawingThreshold);
